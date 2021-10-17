@@ -1,4 +1,4 @@
-![satu](https://github.com/RaisGG/Company_Bankruptcy_Prediction/blob/main/Bnkcrupt.jpg)
+![satu](https://github.com/RaisGG/Belajar-data/blob/main/Company_Bankruptcy_Prediction/Bnkcrupt.jpg)
 
 ## Domain Proyek
 

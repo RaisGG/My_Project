@@ -1,4 +1,4 @@
-# Belajar-data
+# Belajar Data
 
 Repository ini memuat mini project yang saya kerjakan, berasal dari project pelatihan yang saya ikuti
 

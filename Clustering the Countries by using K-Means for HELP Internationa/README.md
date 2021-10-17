@@ -1,13 +1,13 @@
-##Clustering the Countries by using K-Means for HELP International
+## Clustering the Countries by using K-Means for HELP International
 Sumber Dataset(English)
 [Humanitarian Aid to Underdeveloped Countries](https://www.kaggle.com/ramlalnaik/humanitarian-aid-to-underdeveloped-countries/data)
 
-#Objective: 
+# Objective: 
 
 Untuk mengkategorikan negara menggunakan faktor sosial ekonomi dan kesehatan yang menentukan pembangunan negara secara keseluruhan.
 
 
-#Tentang Organisasi:
+# Tentang Organisasi:
 
 HELP International adalah LSM kemanusiaan internasional yang berkomitmen untuk memerangi kemiskinan dan menyediakan fasilitas dan bantuan dasar bagi masyarakat di negara-negara terbelakang saat terjadi bencana dan bencana alam.
 
@@ -19,7 +19,7 @@ HELP International telah berhasil mengumpulkan sekitar $ 10 juta. Saat ini, CEO 
 
  
 
-#Penjelasan kolom fitur:
+# Penjelasan kolom fitur:
 
 - Negara : Nama negara
 - Kematian_anak: Kematian anak di bawah usia 5 tahun per 1000 kelahiran

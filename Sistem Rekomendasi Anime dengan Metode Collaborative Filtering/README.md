@@ -1,6 +1,7 @@
 # Laporan Proyek Machine Learning – Abdul Ghofur Rais Kumar
 
 ## Project Overview
+![1](https://github.com/RaisGG/Mini-Project/blob/main/Sistem%20Rekomendasi%20Anime%20dengan%20Metode%20Collaborative%20Filtering/asset/Anime1.jpg)
 
 Anime adalah animasi dari Jepang yang digambar dengan tangan maupun menggunakan teknologi komputer. Kata anime merupakan singkatan dari "animation" dalam Bahasa Inggris, yang merujuk pada semua jenis animasi.Di luar Jepang, istilah ini digunakan secara spesifik untuk menyebutkan segala animasi yang diproduksi di Jepang. Meskipun demikian, tidak menutup kemungkinan bahwa anime dapat diproduksi di luar Jepang.Beberapa ahli berpendapat bahwa anime merupakan bentuk baru dari orientalisme.
 
@@ -27,6 +28,8 @@ Collaborative filtering merupakan sistem rekomendasi yang penentuan rekomendasin
 -	Item-item filtering: dari konten-konten yang disukai dan/atau tidak disukai pengguna, cari K konten lain yang memiliki rating serupa (berkorelasi tinggi)
 -	User-user filtering: dari pengguna-pengguna yang memiliki preferensi serupa dan/atau berbanding terbalik dengan pengguna u, cari K konten lain yang disukai dan/atau tidak disukai oleh mereka
 ## Data Understanding
+
+![2](https://github.com/RaisGG/Mini-Project/blob/main/Sistem%20Rekomendasi%20Anime%20dengan%20Metode%20Collaborative%20Filtering/asset/kaggle.png)
 Dataset ini ini berisi informasi tentang data preferensi pengguna dari 73.516 pengguna di 12.294 anime. Dimana setiap pengguna dapat menambahkan anime ke dalam daftar dan memberikan peringkat dan kumpulan data ini adalah kompilasi dari peringkat tersebut.
 Sumber dataset : [Anime Recommendations Database](https://www.kaggle.com/CooperUnion/anime-recommendations-database)
 ### Isi dataset
@@ -52,23 +55,22 @@ Pada dataset, nilai missing value dari rating, diisi dengan nilai -1. Kita akan 
 -	melakukan pivoting tabel
 Dalam collaborative filtering, kita perlu membuat tabel pivot 'user_id' pada satu sumbu dan 'name' di sumbu lainnya. Tabel pivot akan membantu kami dalam menentukan kesamaan antara pengguna dan anime untuk memprediksi dengan lebih baik siapa yang akan menyukai apa.
 -	Normalisasi values 
-Hal ini dilakukan agar rentang nilai pada label numerik hanya antara 0-1 sehingga dapat mempercepat komputasinya. Selain itu standarisasi juga membuat semua label numerik memiliki rentang nilai yang sama. Normalisasi dilakukan dengan menggunakan min-max normalization.
-
+Hal ini dilakukan agar rentang nilai pada label numerik hanya antara 0-1 sehingga dapat mempercepat komputasinya. Selain itu standarisasi juga membuat semua label numerik memiliki rentang nilai yang sama. Normalisasi dilakukan dengan menggunakan min-max normalization.  
+![3](https://github.com/RaisGG/Mini-Project/blob/main/Sistem%20Rekomendasi%20Anime%20dengan%20Metode%20Collaborative%20Filtering/asset/min-max-normalisation.jpg)
 
 ## Modeling
-Pada modeling, kita akan menggunakan metode cosine similiarity untuk mendapatkan rekomendasi anime. Kita dapat melakukan metode cosine similiarity dengan cara memanggil fungsi cosine_similarity dengan argumen dataframe sebagai objeknya pada library sklearn.
-Berdasarkan cosine similiarity, kita akan mencoba melakukan rekomendasi anime untuk anime yang mirip dengan Gintama dan Naruto sebagai berikut.
-
-Kita akan coba melihat 10 user dengan preferensi yang mirip dengan user no 5 sebagai berikut:
-
-Terakhir, kita dapat melihat rekomendasi anime untuk user no 5berdasarkan preferensi pengguna lain 
-
-kita juga dapat mendapatkan nilai rating potensial antara user no 5 dan anime gintama
-
+Pada modeling, kita akan menggunakan metode cosine similiarity untuk mendapatkan rekomendasi anime. Kita dapat melakukan metode cosine similiarity dengan cara memanggil fungsi cosine_similarity dengan argumen dataframe sebagai objeknya pada library sklearn.  
+- Berdasarkan cosine similiarity, kita akan mencoba melakukan rekomendasi anime untuk anime yang mirip dengan Gintama dan Naruto sebagai berikut.  
+![4](https://github.com/RaisGG/Mini-Project/blob/main/Sistem%20Rekomendasi%20Anime%20dengan%20Metode%20Collaborative%20Filtering/asset/1anime.png)
+- Kita akan coba melihat 10 user dengan preferensi yang mirip dengan user no 5 sebagai berikut:  
+![5](https://github.com/RaisGG/Mini-Project/blob/main/Sistem%20Rekomendasi%20Anime%20dengan%20Metode%20Collaborative%20Filtering/asset/2user.png)
+- Kita dapat melihat rekomendasi anime untuk user no 5berdasarkan preferensi pengguna lain   
+![6](https://github.com/RaisGG/Mini-Project/blob/main/Sistem%20Rekomendasi%20Anime%20dengan%20Metode%20Collaborative%20Filtering/asset/3user.png)
+- kita juga dapat mendapatkan nilai rating potensial antara user no 5 dan anime gintama  
+![7](https://github.com/RaisGG/Mini-Project/blob/main/Sistem%20Rekomendasi%20Anime%20dengan%20Metode%20Collaborative%20Filtering/asset/4user.png)
 ## Evaluasi
-
+![8](https://github.com/RaisGG/Mini-Project/blob/main/Sistem%20Rekomendasi%20Anime%20dengan%20Metode%20Collaborative%20Filtering/asset/MSE.jpg)  
 Berdasarkan perhitungan nilai Mean Squared Error diatas, kita mendapatkan nilai MSE sebesar 12.5. Hal ini tergolong rendah(kita memangkatkan nilai error rata-rata) sehingga sistem rekomendasi dapat kita gunakan. Hasil dari nilai rekomendasi yang dilakukan juga cukup baik. Namun, peningkatan performa sistem masih dapat dilakukan kedepannya dengan algoritma yang lebih baik.
 
 ## Referensi
 Girsang A.S, Al Faruq B., Herlianto , & Simbolon. S(2020). Collaborative Recommendation System in Users of Anime Films. Journal of Physics: Conference Series.
-

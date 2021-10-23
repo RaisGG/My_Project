@@ -1,6 +1,6 @@
 # Belajar Data
 
-Repository ini memuat mini project selama mempelajari Data Science
+Repository ini memuat mini project Data Science
 
 ## Index
 - [Company_Bankruptcy_Prediction](https://github.com/RaisGG/Belajar-data/tree/main/Company_Bankruptcy_Prediction)

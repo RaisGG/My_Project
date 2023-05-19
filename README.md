@@ -11,3 +11,6 @@ Repository ini memuat mini project Data Science
 
 ### Recommender System
 - [Anime Recommendation](https://github.com/RaisGG/Mini-Project/tree/main/Anime%20recommendation)
+
+### Computer Vision
+[Edify Diabetics](https://github.com/RaisGG/Capstone-bangkit)
